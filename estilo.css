@@ -1,0 +1,122 @@
+*{
+    margin:0px;
+    padding: 0px;
+}
+/* Index */
+/*HEADER*/
+.header{
+    background-image: url(imagenes/imagenHeader.jpg);
+    background-position: center;
+    background-size: cover;
+}
+nav {
+    font-family: 'Lobster', Arial, Helvetica, sans-serif;
+    font-size: 1.2rem; }
+
+h5{
+    font-size: 130px;
+    text-align: center;
+    padding-bottom: 150px;
+}
+section{
+    padding-bottom: 300px;
+}
+#logo{
+    height:130px;
+}
+/*CARDS*/
+.card-img-filter{
+    filter:brightness(0.)
+}
+.card{
+    transition-duration: 0.8s;
+    clip-path:polygon(50% 0, 100% 0, 100% 50%, 100% 50%, 100% 100%, 50% 100%, 0 100%, 0 50%, 0 0);
+} 
+
+.card-effect:hover .card{
+    clip-path:polygon(50% 0, 50% 0, 100% 50%, 100% 50%, 50% 100%, 50% 100%, 0 50%, 0 50%);
+}
+.card-effect:hover .card-img-overlay{
+ transform:scale(0.9);
+}
+.card-img-overlay{
+    transition-duration: 0.8s;
+}
+.carousel, .carousel-inner {
+    max-height: 80%;
+    object-fit: scale-down;
+}
+
+/*FOOTER*/
+footer{  
+    text-align: center;
+    height: 300px;
+    padding-top: 20px;
+    background-color: rgb(61, 61, 83);    
+}
+.redes{
+    width: 200px;
+    height: 100px;
+}
+h1{
+    padding-top:70px;
+    font-size: 120px;
+}
+/*MAPS*/
+.containerMaps{
+    padding-top: 30px;
+    padding-bottom: 0px;
+    padding-left:100px;
+}
+
+.plano{
+    animation:aparecer 5s infinite;
+}
+@keyframes aparecer{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.containerPlano{
+    padding-bottom: 60px;
+    padding-top: 60px;
+    padding-left: 80px;
+    padding-right:80px;
+}
+
+/*EXPERIENCIAS*/
+.containerExp{
+    padding-top: 0px;
+   
+}
+.media-object-img{
+    --tamano:200px;
+    width: var(--tamano);
+    height: var(--tamano);
+    padding-right: 15px;
+}
+/*CONTACTO*/
+.contacto{
+    background-image:url(imagenes/fondo\ contacto.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.form{
+    background: rgba(65, 65, 64, 0.5);
+    color: #fff;
+    margin-top: 2px;
+    padding-bottom: 4px;
+    padding-left: 3px;
+    padding-right: 3px;
+    border-radius: 5px; 
+    box-shadow: 7px 14px 40px #1b1b1b;
+  }
+  .headerContacto{
+    background-image:url(imagenes/fondo\ contacto.jpg);
+    background-position: center;
+    background-size: cover;
+}
